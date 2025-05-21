@@ -1,5 +1,5 @@
-import "./App.scss";
 import reactLogo from "./assets/react.svg";
+import "./styles/App.scss";
 
 function App() {
   return (

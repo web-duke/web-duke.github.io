@@ -4,7 +4,6 @@ import reactLogo from "./assets/react.svg";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import { ROUTES } from "./routes";
-import "./styles/App.scss";
 
 function App() {
   const { t, i18n } = useTranslation();

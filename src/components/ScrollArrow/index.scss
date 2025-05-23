@@ -8,10 +8,6 @@
   display: block;
   animation: bounce 2s infinite;
 
-  &.scrolled--true {
-    display: none;
-  }
-
   @keyframes bounce {
     0%,
     20%,

@@ -14,7 +14,7 @@ export const HeaderContent = () => {
       <h1 className="HeaderContent__title">{t("title")}</h1>
       <p className="HeaderContent__subtitle">{t("subtitle")}</p>
 
-      <ScrollArrow />
+      {!scrolled && <ScrollArrow />}
     </header>
   );
 };

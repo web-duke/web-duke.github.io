@@ -1,5 +1,12 @@
 {
-  "title": "Giovanni, Developer",
+  "Avatar": {
+    "alt": "Avatar"
+  },
+
+  "HeaderContent": {
+    "title": "Giovanni",
+    "subtitle": "Web Developer"
+  },
 
   "pages": {
     "home": "CV",

@@ -1,8 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import About from "./pages/About";
-import Home from "./pages/Home";
+import { Link } from "react-router-dom";
 import { ROUTES } from "./routes";
 
 function App() {
@@ -12,8 +9,7 @@ function App() {
     i18n.changeLanguage(lang);
   };
   return (
-    <BrowserRouter>
-      <img src={reactLogo} className="logo react" alt="React logo" />
+    <>
       <button
         onClick={() => changeLanguage("fr")}
         disabled={i18n.language === "fr"}
@@ -29,12 +25,7 @@ function App() {
 
       <Link to={ROUTES.HOME}>{t("pages.home")}</Link>
       <Link to={ROUTES.ABOUT}>{t("pages.about")}</Link>
-
-      <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.ABOUT} element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

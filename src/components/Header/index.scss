@@ -1,0 +1,16 @@
+.Header {
+  position: sticky;
+  z-index: $z-Header;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $c-back-dark;
+  box-shadow: -2px -8px 20px 0px $c-border-light;
+  transition: height 0.3s ease;
+
+  &.scrolled--true {
+    height: 8rem;
+  }
+}

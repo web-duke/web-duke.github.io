@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
-export const About = () => {
+export const AboutPage = () => {
   const { t } = useTranslation();
 
-  return <h1>{t("pages.about")}</h1>;
+  return <div>{t("pages.about")}</div>;
 };
 
-export default About;
+export default AboutPage;

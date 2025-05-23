@@ -1,1 +1,42 @@
+// BREAK POINTS
+$bp-s1: 20rem; // 320px
+$bp-s2: 30rem; // 480px
+$bp-s3: 40rem; // 640px
+$bp-m1: 48rem; // 768px
+$bp-m2: 64rem; // 1024px
+$bp-m3: 80rem; // 1280px
+$bp-l1: 90rem; // 1440px
+$bp-l2: 120rem; // 1920px
+
+// Z-INDEXES
+$z-Header: 2;
+
+// SIZES
+$s-pad: 1rem;
+
+// FONTS
+$fs-main: 16px;
+
+$fw-thin: 100;
+$fw-extraLight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extraBold: 800;
+$fw-black: 900;
+
+// COLORS
 $dark: #000000;
+$gunmetal: #272d2d;
+$rosequartz: #b4a6ab;
+$verdigris: #51a3a3;
+$maize: #fde74c;
+$magnolia: #fcf7ff;
+$light: #ffffff;
+
+$c-back-dark: $gunmetal;
+$c-front-light: $magnolia;
+$c-border-dark: $rosequartz;
+$c-border-light: $magnolia;

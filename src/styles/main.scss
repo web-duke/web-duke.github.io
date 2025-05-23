@@ -1,0 +1,29 @@
+:root {
+  position: relative;
+  background-color: $c-back-dark;
+  color: $c-front-light;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: $fw-regular;
+  line-height: 1.5;
+  font-size: $fs-main;
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

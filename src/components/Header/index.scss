@@ -11,6 +11,6 @@
   transition: height 0.3s ease;
 
   &.scrolled--true {
-    height: 8rem;
+    height: $s-header;
   }
 }

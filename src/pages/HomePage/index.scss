@@ -1,13 +1,15 @@
 .HomePage {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 95vh;
   padding: $s-pad;
 
   .HomePage__intro {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(95vh - $s-header);
     max-width: $bp-s2;
+    margin: 0 auto;
     text-align: justify;
     font-size: 1rem;
     font-weight: 400;

@@ -6,7 +6,9 @@ export const HomePage = () => {
 
   return (
     <section className="HomePage">
-      <p className="HomePage__intro">{t("intro")}</p>
+      <div className="HomePage__intro">
+        <p>{t("intro")}</p>
+      </div>
     </section>
   );
 };

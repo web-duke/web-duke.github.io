@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useScrolled } from "../../context/ScrolledContext";
 import "./index.scss";
 import Avatar from "../Avatar";
+import ScrollArrow from "../ScrollArrow";
 
 export const HeaderContent = () => {
   const scrolled = useScrolled();
@@ -12,6 +13,8 @@ export const HeaderContent = () => {
       <Avatar />
       <h1 className="HeaderContent__title">{t("title")}</h1>
       <p className="HeaderContent__subtitle">{t("subtitle")}</p>
+
+      <ScrollArrow />
     </header>
   );
 };

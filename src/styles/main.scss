@@ -27,3 +27,13 @@ img {
   width: 100%;
   height: auto;
 }
+
+button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}

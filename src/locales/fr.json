@@ -8,6 +8,11 @@
     "subtitle": "Développeur Web"
   },
 
+  "LangButton": {
+    "fr": "Fr",
+    "en": "En"
+  },
+
   "pages": {
     "home": {
       "intro": "J’ai débuté ma carrière en 2012 avec un Master « Chef de projet en développement », effectué en alternance. Mon premier poste m’a rapidement confronté à une équipe de développeurs back-end peu enclins au front-end, ce qui m’a poussé à prendre en main l’intégration et créationd’e-mails responsives. J’ai alors découvert ma passion pour l’intégration web, et j’ai poursuivi mon parcours comme intégrateur, jusqu’à devenir lead intégrateur d’une équipe de trois personnes pendant deux ans. En 2019, j’ai élargi mes compétences en devenant développeur front-end, et depuis 2023 je me suis orienté vers le développement full-stack, alliant ainsi intégration, front-end et back-end dans des projets toujours plus ambitieux."

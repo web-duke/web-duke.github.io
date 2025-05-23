@@ -9,7 +9,10 @@
   },
 
   "pages": {
-    "home": "CV",
+    "home": {
+      "intro": "I began my career in 2012 with a Master’s in Development Project Management through a work-study program. In my first role, I found myself on a team of back-end developers who were reluctant to tackle front-end tasks, which led me to take charge of integration work and building responsive email. That experience revealed my passion for web integration, and I went on to work as a web integrator—eventually serving as lead integrator for a three-person team for two years. In 2019, I expanded my skill set by becoming a front-end developer, and since 2023 I’ve transitioned into full-stack development, combining integration, front-end, and back-end work on increasingly ambitious projects."
+    },
+
     "about": "About"
   }
 }

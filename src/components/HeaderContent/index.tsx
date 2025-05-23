@@ -4,7 +4,7 @@ import "./index.scss";
 import Avatar from "../Avatar";
 
 export const HeaderContent = () => {
-  const { scrolled } = useScrolled();
+  const scrolled = useScrolled();
   const { t } = useTranslation("translation", { keyPrefix: "HeaderContent" });
 
   return (

@@ -4,7 +4,7 @@ import avatar from "./../../assets/avatar.jpeg";
 import "./index.scss";
 
 export const Avatar = () => {
-  const { scrolled } = useScrolled();
+  const scrolled = useScrolled();
   const { t } = useTranslation("translation", { keyPrefix: "Avatar" });
 
   return (

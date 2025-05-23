@@ -10,11 +10,14 @@ interface ScrolledContextValue {
   scrolled: boolean;
 }
 
-const ScrolledContext = createContext<ScrolledContextValue>({
-  scrolled: false,
-});
+const ScrolledContext = createContext<ScrolledContextValue | undefined>(
+  undefined
+);
 
-export const useScrolled = () => useContext(ScrolledContext);
+export const useScrolled = () => {
+  const context = useContext(ScrolledContext);
+  return context?.scrolled ?? false;
+};
 
 interface ScrolledProviderProps {
   children: ReactNode;

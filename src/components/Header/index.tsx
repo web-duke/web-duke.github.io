@@ -3,7 +3,7 @@ import HeaderContent from "../HeaderContent";
 import "./index.scss";
 
 export const Header = () => {
-  const { scrolled } = useScrolled();
+  const scrolled = useScrolled();
 
   return (
     <div className={`Header scrolled--${scrolled}`}>

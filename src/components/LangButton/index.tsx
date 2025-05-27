@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 import "./index.scss";
 
-export const LangButton = () => {
+type LangButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+export const LangButton = ({ className }: LangButtonProps) => {
   const { t, i18n } = useTranslation("translation", {
     keyPrefix: "LangButton",
   });
@@ -14,7 +16,7 @@ export const LangButton = () => {
   const label = i18n.language === "fr" ? t("en") : t("fr");
 
   return (
-    <button className="LangButton" onClick={switchLang}>
+    <button className={`LangButton ${className}`} onClick={switchLang}>
       {label}
     </button>
   );

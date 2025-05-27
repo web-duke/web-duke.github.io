@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useScrolled } from "../../context/ScrolledContext";
 import Avatar from "../Avatar";
 import LangButton from "../LangButton";
+import MenuButton from "../MenuButton";
 import ScrollArrow from "../ScrollArrow";
 import "./index.scss";
 
@@ -18,6 +19,7 @@ export const HeaderContent = () => {
       <p className="HeaderContent__subtitle">{t("subtitle")}</p>
 
       {!scrolled && <ScrollArrow />}
+      {scrolled && <MenuButton />}
     </header>
   );
 };

@@ -1,0 +1,114 @@
+.MenuButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  @media (min-width: $bp-m3) {
+    right: calc(50vw - ($bp-m3/2));
+  }
+
+  &.isOpen--true {
+    .MenuButton__openButton {
+      box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.1);
+    }
+
+    .MenuButton__itemsWrapper__item {
+      transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      &:nth-child(1) {
+        transform: translate3d(1rem, -7rem, 0);
+      }
+
+      &:nth-child(2) {
+        transform: translate3d(-3.5rem, -6.3rem, 0);
+      }
+
+      &:nth-child(3) {
+        transform: translate3d(-6.5rem, -3.2rem, 0);
+      }
+
+      &:nth-child(4) {
+        transform: translate3d(-7rem, 1rem, 0);
+      }
+    }
+
+    &.isLeft--true {
+      .MenuButton__itemsWrapper__item {
+        &:nth-child(1) {
+          transform: translate3d(-1rem, -7rem, 0);
+        }
+
+        &:nth-child(2) {
+          transform: translate3d(3.5rem, -6.3rem, 0);
+        }
+
+        &:nth-child(3) {
+          transform: translate3d(6.5rem, -3.2rem, 0);
+        }
+
+        &:nth-child(4) {
+          transform: translate3d(7rem, 1rem, 0);
+        }
+      }
+    }
+  }
+
+  &.isLeft--true {
+    right: auto;
+    left: 1rem;
+
+    @media (min-width: $bp-m3) {
+      left: calc(50vw - ($bp-m2/2));
+    }
+  }
+
+  .MenuButton__openButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.26);
+    outline: 0;
+    background-color: $c-highlight-1;
+    box-shadow: none;
+    font-size: 1.6em;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 0 1rem -0.2rem $c-highlight-2;
+    }
+  }
+
+  .MenuButton__itemsWrapper__item {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $c-back-dark;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, background 0.2s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.1);
+    }
+
+    .material-symbols-sharp {
+      font-size: 1.2em;
+    }
+  }
+}

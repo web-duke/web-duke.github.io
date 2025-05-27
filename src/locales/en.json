@@ -14,10 +14,12 @@
   },
 
   "pages": {
-    "home": {
-      "intro": "Full-stack developer, I started my career by taking charge of web integration within back-end focused teams. This experience allowed me to build strong expertise in HTML, CSS, JavaScript, and responsive design. After working as a lead integrator, I expanded my skill set to front-end development, and eventually full-stack. Today, I work across the entire development cycle. Self-taught and curious by nature, I’m not afraid to step out of my comfort zone and quickly learn new technologies to meet the challenges I take on."
+    "AboutPage": {
+      "intro": "wip"
     },
 
-    "about": "About"
+    "HomePage": {
+      "intro": "Full-stack developer, I started my career by taking charge of web integration within back-end focused teams. This experience allowed me to build strong expertise in HTML, CSS, JavaScript, and responsive design. After working as a lead integrator, I expanded my skill set to front-end development, and eventually full-stack. Today, I work across the entire development cycle. Self-taught and curious by nature, I’m not afraid to step out of my comfort zone and quickly learn new technologies to meet the challenges I take on."
+    }
   }
 }

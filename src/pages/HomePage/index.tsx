@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import "./index.scss";
 
 export const HomePage = () => {
-  const { t } = useTranslation("translation", { keyPrefix: "pages.home" });
+  const { t } = useTranslation("translation", { keyPrefix: "pages.HomePage" });
 
   return (
     <section className="HomePage">

@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: $c-back-dark;
-  box-shadow: -2px -8px 20px 0px $c-border-light;
+  box-shadow: -2px -8px 20px 0px $c-back-black;
   transition: height 0.3s ease;
 
   &.scrolled--true {

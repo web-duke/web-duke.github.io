@@ -1,6 +1,8 @@
 .Avatar {
+  box-sizing: border-box;
   border-radius: 50%;
   max-width: 18rem;
+  border: 2px solid $c-highlight-1;
 
   &.scrolled--true {
     position: absolute;

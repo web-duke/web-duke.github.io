@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Box from "./components/Box/index.tsx";
 import Header from "./components/Header/index.tsx";
 import { ScrolledProvider } from "./context/ScrolledContext.tsx";
@@ -13,7 +13,7 @@ import "./styles/normalize.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrolledProvider>
         <Header />
 
@@ -24,6 +24,6 @@ createRoot(document.getElementById("root")!).render(
           </Routes>
         </Box>
       </ScrolledProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

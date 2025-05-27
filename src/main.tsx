@@ -8,8 +8,8 @@ import "./i18n";
 import AboutPage from "./pages/AboutPage/index.tsx";
 import HomePage from "./pages/HomePage/index.tsx";
 import { ROUTES } from "./routes.ts";
-import "./styles/main.scss";
 import "./styles/normalize.css";
+import "./styles/main.scss";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

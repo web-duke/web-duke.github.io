@@ -3,6 +3,7 @@ import ExperienceCard, {
   type ExperienceProps,
 } from "../../components/ExperienceCard";
 import "./index.scss";
+import React from "react";
 
 export const HomePage = () => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.HomePage" });
@@ -73,7 +74,7 @@ export const HomePage = () => {
         "Storybook",
         "Styled Component",
       ],
-      details: [tExp("radioCan.details1"), tExp("radioCan.details2")],
+      details: [tExp("radioCan.details1")],
     },
   ];
 
@@ -86,8 +87,10 @@ export const HomePage = () => {
       <section className="HomePage__experiences">
         <h1 className="HomePage__experiences__title">{t("experienceTitle")}</h1>
 
-        {experiences.map((experience) => (
-          <ExperienceCard data={experience} />
+        {experiences.map((experience, i) => (
+          <React.Fragment key={`ExperienceCard-${i}`}>
+            <ExperienceCard data={experience} />
+          </React.Fragment>
         ))}
       </section>
     </div>

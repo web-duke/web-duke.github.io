@@ -32,14 +32,19 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
       <div className="ExperienceCard__jobTitle">{data.jobTitle}</div>
 
       <div className="ExperienceCard__skills">
-        {data.skills.map((skill) => (
-          <span className="ExperienceCard__skills__item">{skill}</span>
+        {data.skills.map((skill, i) => (
+          <span
+            key={`ExperienceCard__skills-${i}`}
+            className="ExperienceCard__skills__item"
+          >
+            {skill}
+          </span>
         ))}
       </div>
 
       <ul className="ExperienceCard__details">
-        {data.details.map((detail) => (
-          <li>{detail}</li>
+        {data.details.map((detail, i) => (
+          <li key={`ExperienceCard__details-${i}`}>{detail}</li>
         ))}
       </ul>
     </div>

@@ -15,29 +15,65 @@
 
   "pages": {
     "AboutPage": {
-      "intro": "wip"
+      "intro": "En cours"
     },
 
     "HomePage": {
-      "intro": "Développeur full-stack, j’ai commencé ma carrière en prenant en main l’intégration web au sein d’équipes centrées sur le back-end. Cette expérience m’a permis de développer une expertise solide en HTML, CSS, JavaScript et responsive design. Après avoir été lead intégrateur, j’ai élargi mes compétences au développement front-end, puis full-stack, ce qui me permet aujourd’hui d’intervenir sur l’ensemble de la chaîne de développement. Autodidacte et curieux, je n’hésite pas à sortir de ma zone de confort et à apprendre de nouvelles technologies pour relever les défis qui me sont confiés.",
-      "experienceTitle": "Expériences professionnelle",
+      "intro": "Développeur Full Stack, j’ai commencé ma carrière en prenant en main l’intégration web au sein d’équipes centrées sur le back-end. Cette expérience m’a permis de développer une expertise solide en HTML, CSS, JavaScript et design responsive. Après avoir été lead intégrateur, j’ai élargi mes compétences au développement front-end puis full-stack, ce qui me permet aujourd’hui d’intervenir sur l’ensemble de la chaîne de développement. Autodidacte et curieux, je n’hésite pas à sortir de ma zone de confort et à apprendre de nouvelles technologies pour relever les défis qui me sont confiés.",
+      "experienceTitle": "Expériences professionnelles",
 
       "experiences": {
         "kehops": {
           "jobTitle": "Développeur Full Stack",
-          "details1": "Développement du site web statique Kehops (Astro framework) : https://www.kehops.com/",
-          "details2": "Développement de la solution Kehops"
+          "details1": "Conception et développement du site web statique Kehops avec Astro.",
+          "details2": "Développement de la solution Kehops."
         },
 
         "appcom": {
-          "jobTitle": "Développeur Front End",
-          "details1": "Développement du sites web",
-          "details2": "Développement de l'application flexy"
+          "jobTitle": "Développeur Front-end",
+          "details1": "Création et maintenance de plusieurs sites web responsives en React.",
+          "details2": "Développement de l’application Flexy."
         },
 
         "radioCan": {
-          "jobTitle": "Développeur Front End",
-          "details1": "Développement de Scoop, le cms des journalistes"
+          "jobTitle": "Développeur Front-end",
+          "details1": "Refonte en React de Scoop, le CMS interne des journalistes."
+        },
+
+        "misterFly": {
+          "jobTitle": "Développeur Front-end",
+          "details1": "Refonte responsive de l'interfaces d’Idiliz.",
+          "details2": "Développement responsive de l’interfaces d’Ooofly."
+        },
+
+        "bazarchic": {
+          "jobTitle": "Développeur UI",
+          "details1": "Lead développeur UI pour la création d’un design system.",
+          "details2": "Conseil stratégique sur les choix de design et accès utilisateurs.",
+          "details3": "Refonte responsive de l’interface.",
+          "details4": "Intégration d’e-mails responsives pour les campagnes marketing."
+        },
+
+        "shiva": {
+          "jobTitle": "Développeur UI",
+          "details1": "Création de sites vitrines commerciaux pour divers clients."
+        },
+
+        "bnp": {
+          "jobTitle": "Développeur UI",
+          "details1": "Refonte responsive de l’interface de la plateforme client.",
+          "details2": "Mise en place d’un design system."
+        },
+
+        "weka": {
+          "jobTitle": "Développeur UI",
+          "details1": "Refonte de l’interface responsive."
+        },
+
+        "kalidea": {
+          "jobTitle": "Développeur UI",
+          "details1": "Conception de sites commerciaux en collaboration avec l’équipe marketing.",
+          "details2": "Intégration de modules e-commerce et configuration du back-office personnalisé."
         }
       }
     }

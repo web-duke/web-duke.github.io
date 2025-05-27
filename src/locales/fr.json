@@ -21,11 +21,23 @@
     "HomePage": {
       "intro": "Développeur full-stack, j’ai commencé ma carrière en prenant en main l’intégration web au sein d’équipes centrées sur le back-end. Cette expérience m’a permis de développer une expertise solide en HTML, CSS, JavaScript et responsive design. Après avoir été lead intégrateur, j’ai élargi mes compétences au développement front-end, puis full-stack, ce qui me permet aujourd’hui d’intervenir sur l’ensemble de la chaîne de développement. Autodidacte et curieux, je n’hésite pas à sortir de ma zone de confort et à apprendre de nouvelles technologies pour relever les défis qui me sont confiés.",
       "experienceTitle": "Expériences professionnelle",
+
       "experiences": {
         "kehops": {
           "jobTitle": "Développeur Full Stack",
           "details1": "Développement du site web statique Kehops (Astro framework) : https://www.kehops.com/",
           "details2": "Développement de la solution Kehops"
+        },
+
+        "appcom": {
+          "jobTitle": "Développeur Front End",
+          "details1": "Développement du sites web",
+          "details2": "Développement de l'application flexy"
+        },
+
+        "radioCan": {
+          "jobTitle": "Développeur Front End",
+          "details1": "Développement de Scoop, le cms des journalistes"
         }
       }
     }

@@ -2,6 +2,7 @@
 
 - npm run dev : local server
 - npm run build : for prod
+- npm run build-storybook : for prod
 - npm run storybook
 
 # React + TypeScript + Vite

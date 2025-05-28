@@ -1,4 +1,4 @@
-@import "./print";
+@use "./print" as *;
 
 :root {
   position: relative;

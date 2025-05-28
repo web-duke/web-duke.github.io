@@ -19,61 +19,72 @@
     },
 
     "HomePage": {
-      "intro": "Full Stack Developer, I began my career by taking charge of web integration within backend-focused teams. This experience allowed me to develop a solid expertise in HTML, CSS, JavaScript, and responsive design. After serving as lead integrator, I expanded my skills to front-end and then full-stack development, enabling me to work across the entire development chain today. Self-taught and curious, I don’t hesitate to step outside my comfort zone and learn new technologies to meet the challenges entrusted to me.",
+      "intro": "Full Stack Developer, I began my career by taking charge of web integration within backend-focused teams. This experience allowed me to develop strong expertise in HTML, CSS, JavaScript, and responsive design. After serving as lead integrator, I expanded my skills to front-end and then full-stack development, enabling me to work across the entire development pipeline today. Self-taught and curious, I don’t hesitate to step out of my comfort zone and learn new technologies to meet the challenges entrusted to me.",
       "experienceTitle": "Professional Experience",
 
       "experiences": {
         "kehops": {
           "jobTitle": "Full Stack Developer",
-          "details1": "Design and development of the static Kehops website with Astro.",
-          "details2": "Development of the Kehops solution."
+          "details1": "Complete implementation of the static Kehops website: installation and configuration of the Astro framework, setup of a multi-language translation system, design and integration of all custom styles and animations in HTML/CSS/JavaScript without third-party libraries, and automated deployment to production via a GitHub Action.",
+          "details2": "For the Kehops solution—a recruitment assistance software centralizing agencies and fostering competition—I implemented the design using Tailwind CSS, created reusable React components, developed and unit-tested backend use cases, orchestrated GraphQL queries, and built an asynchronous messaging module from scratch to enable user conversations."
         },
 
         "appcom": {
           "jobTitle": "Front-end Developer",
-          "details1": "Creation and maintenance of multiple responsive websites in React.",
-          "details2": "Development of the Flexy application."
+          "details1": "Developed CommonGrounds, a meeting room reservation platform deployed across multiple companies, where I designed reusable components and customized styles and features to each client's requirements.",
+          "details2": "Built the Appcom website on a PHP architecture, coding entirely in HTML, CSS, and vanilla JavaScript without using any libraries.",
+          "details3": "Developed Flexy, a teleworking presence management platform that provides real-time visibility into which employees are in the office and which are remote."
         },
 
         "radioCan": {
           "jobTitle": "Front-end Developer",
-          "details1": "Redesign of Scoop, the internal CMS for journalists, in React."
+          "details1": "Led the React-based redesign of Scoop, the internal CMS for journalists, by creating and documenting components with Storybook and ensuring stability through visual regression tests using Loki."
         },
 
         "misterFly": {
           "jobTitle": "Front-end Developer",
-          "details1": "Responsive redesign of the Idiliz interface.",
-          "details2": "Responsive development of the Ooofly interface."
+          "details1": "Executed a responsive redesign of the Idiliz site on an Angular foundation, crafting the entire interface in native HTML and CSS.",
+          "details2": "Developed the responsive interface of the Ooofly site on Angular using pure HTML and CSS."
         },
 
         "bazarchic": {
           "jobTitle": "UI Developer",
-          "details1": "Lead UI Developer for the creation of a design system.",
-          "details2": "Strategic consulting on design choices and user access.",
-          "details3": "Responsive interface redesign.",
-          "details4": "Integration of responsive emails for marketing campaigns."
+          "details1": "As Lead UI Developer, I established and advanced the design system, performed code reviews, and delegated tasks across my two team members.",
+          "details2": "Provided strategic consulting on design decisions and user access flows.",
+          "details3": "Executed a responsive redesign of the interface.",
+          "details4": "Integrated responsive email templates for marketing campaigns."
         },
 
         "shiva": {
           "jobTitle": "UI Developer",
-          "details1": "Creation of commercial showcase websites for various clients."
+          "details1": "Developed commercial showcase websites for various clients."
         },
 
         "bnp": {
           "jobTitle": "UI Developer",
-          "details1": "Responsive redesign of the client platform interface.",
-          "details2": "Implementation of a design system."
+          "details1": "Performed a responsive redesign of the client platform's interface.",
+          "details2": "Implemented a design system."
         },
 
         "weka": {
           "jobTitle": "UI Developer",
-          "details1": "Responsive interface redesign."
+          "details1": "Redesigned the responsive interface."
         },
 
         "kalidea": {
           "jobTitle": "UI Developer",
-          "details1": "Design of commercial websites in collaboration with the marketing team.",
-          "details2": "Integration of e-commerce modules and configuration of a custom back office."
+          "details1": "Designed commercial websites in collaboration with the marketing team.",
+          "details2": "Integrated e-commerce modules and configured a custom back-office."
+        }
+      },
+
+      "educationTitle": "Education",
+      "education": {
+        "ipssi": {
+          "jobTitle": "Master’s Degree in Project Management for Development"
+        },
+        "julesFerry": {
+          "jobTitle": "BTS in IT Management"
         }
       }
     }

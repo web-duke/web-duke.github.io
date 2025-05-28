@@ -10,6 +10,9 @@ export const HomePage = () => {
   const { t: tExp } = useTranslation("translation", {
     keyPrefix: "pages.HomePage.experiences",
   });
+  const { t: tEdu } = useTranslation("translation", {
+    keyPrefix: "pages.HomePage.education",
+  });
 
   const experiences: ExperienceProps[] = [
     {
@@ -35,6 +38,7 @@ export const HomePage = () => {
         "Figma",
       ],
       details: [tExp("kehops.details1"), tExp("kehops.details2")],
+      sources: [{ url: "https://www.kehops.com/", label: "kehops.com" }],
     },
     {
       startDate: "2020-10",
@@ -53,7 +57,12 @@ export const HomePage = () => {
         "Jira",
         "Figma",
       ],
-      details: [tExp("appcom.details1"), tExp("appcom.details2")],
+      details: [
+        tExp("appcom.details1"),
+        tExp("appcom.details2"),
+        tExp("appcom.details3"),
+      ],
+      sources: [{ url: "https://appcom.ca/", label: "appcom.ca" }],
     },
     {
       startDate: "2019-02",
@@ -75,6 +84,9 @@ export const HomePage = () => {
         "Styled Component",
       ],
       details: [tExp("radioCan.details1")],
+      sources: [
+        { url: "https://ici.radio-canada.ca/", label: "ici.radio-canada.ca" },
+      ],
     },
     {
       startDate: "2015-04",
@@ -93,6 +105,10 @@ export const HomePage = () => {
         "Photoshop",
       ],
       details: [tExp("misterFly.details1"), tExp("misterFly.details2")],
+      sources: [
+        { url: "https://www.misterfly.com/", label: "misterfly.com" },
+        { url: "https://www.idiliz.com/", label: "idiliz.com" },
+      ],
     },
     {
       startDate: "2015-04",
@@ -115,6 +131,7 @@ export const HomePage = () => {
         tExp("bazarchic.details3"),
         tExp("bazarchic.details4"),
       ],
+      sources: [{ url: "https://fr.bazarchic.com/", label: "bazarchic.com" }],
     },
     {
       startDate: "2015-01",
@@ -132,6 +149,7 @@ export const HomePage = () => {
         "Photoshop",
       ],
       details: [tExp("shiva.details1")],
+      sources: [{ url: "http://www.shivacom.fr/", label: "shivacom.fr" }],
     },
     {
       startDate: "2014-11",
@@ -148,6 +166,9 @@ export const HomePage = () => {
         "Photoshop",
       ],
       details: [tExp("bnp.details1")],
+      sources: [
+        { url: "https://mabanque.bnpparibas/", label: "mabanque.bnpparibas" },
+      ],
     },
     {
       startDate: "2014-09",
@@ -164,6 +185,7 @@ export const HomePage = () => {
         "Photoshop",
       ],
       details: [tExp("weka.details1")],
+      sources: [{ url: "https://www.weka.fr/", label: "weka.fr" }],
     },
     {
       startDate: "2012-08",
@@ -183,6 +205,26 @@ export const HomePage = () => {
     },
   ];
 
+  const education: ExperienceProps[] = [
+    {
+      startDate: "2012-09",
+      endDate: "2014-09",
+      jobTitle: tEdu("ipssi.jobTitle"),
+      companyName: "IPSSI",
+      location: "Paris, France",
+      skills: ["Gestion de projet", "Développement Web"],
+      sources: [{ url: "https://ecole-ipssi.com/", label: "ecole-ipssi.com" }],
+    },
+    {
+      startDate: "2008-09",
+      endDate: "2011-09",
+      jobTitle: tEdu("julesFerry.jobTitle"),
+      companyName: "Lycée Jules Ferry",
+      location: "julesFerry, France",
+      skills: ["Gestion de projet", "Développement Web"],
+    },
+  ];
+
   return (
     <div className="HomePage">
       <section className="HomePage__intro">
@@ -190,11 +232,36 @@ export const HomePage = () => {
       </section>
 
       <section className="HomePage__experiences">
-        <h1 className="HomePage__experiences__title">{t("experienceTitle")}</h1>
+        <h1 className="HomePage__experiences__title">
+          <div className="HomePage__experiences__title__wrapper">
+            <span className="HomePage__experiences__title__wrapper__icon material-symbols-sharp">
+              domain
+            </span>
+
+            {t("experienceTitle")}
+          </div>
+        </h1>
 
         {experiences.map((experience, i) => (
           <React.Fragment key={`ExperienceCard-${i}`}>
             <ExperienceCard data={experience} />
+          </React.Fragment>
+        ))}
+      </section>
+
+      <section className="HomePage__education">
+        <h1 className="HomePage__experiences__title">
+          <div className="HomePage__experiences__title__wrapper">
+            <span className="HomePage__experiences__title__wrapper__icon material-symbols-sharp">
+              school
+            </span>
+            {t("educationTitle")}
+          </div>
+        </h1>
+
+        {education.map((education, i) => (
+          <React.Fragment key={`ExperienceCard-${i}`}>
+            <ExperienceCard data={education} />
           </React.Fragment>
         ))}
       </section>

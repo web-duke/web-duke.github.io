@@ -25,30 +25,31 @@
       "experiences": {
         "kehops": {
           "jobTitle": "Développeur Full Stack",
-          "details1": "Conception et développement du site web statique Kehops avec Astro.",
-          "details2": "Développement de la solution Kehops."
+          "details1": "Réalisation complète du site statique Kehops, installation et configuration du framework Astro, mise en place d’un système de traduction multi-langues, conception et intégration de tous les styles et animations en HTML/CSS/JavaScript sans bibliothèque tierce, et automatisation du déploiement en production via une GitHub Action.",
+          "details2": "Pour la solution Kehops — un logiciel d’aide au recrutement centralisant les agences et favorisant la concurrence — j’ai intégré le design avec Tailwind CSS, développé des composants React réutilisables, implémenté les use case backend, rédigé des tests unitaires, orchestré les requêtes GraphQL, puis conçu de A à Z un module de messagerie asynchrone offrant aux utilisateurs un échange de messages."
         },
 
         "appcom": {
           "jobTitle": "Développeur Front-end",
-          "details1": "Création et maintenance de plusieurs sites web responsives en React.",
-          "details2": "Développement de l’application Flexy."
+          "details1": "Développement de CommonGrounds une plateforme de réservation de salles pour meetings, déclinée auprès de plusieurs entreprises, où j’ai conçu des composants réutilisables et adapté styles et fonctionnalités aux besoins spécifiques de chaque client.",
+          "details2": "Développement du site d'Appcom sur une architecture PHP, en codant intégralement en HTML, CSS et JavaScript natif, sans recourir à aucune librairie.",
+          "details3": "Développement de Flexy, une plateforme de gestion des présences des employés en télétravail, offrant une visibilité instantanée sur qui est au bureau et qui travaille à distance."
         },
 
         "radioCan": {
           "jobTitle": "Développeur Front-end",
-          "details1": "Refonte en React de Scoop, le CMS interne des journalistes."
+          "details1": "Refonte en React de Scoop, le CMS des journalistes, en créant et documentant mes composants avec Storybook et en garantissant leur stabilité grâce à des tests de régression visuels avec Loki."
         },
 
         "misterFly": {
           "jobTitle": "Développeur Front-end",
-          "details1": "Refonte responsive de l'interfaces d’Idiliz.",
-          "details2": "Développement responsive de l’interfaces d’Ooofly."
+          "details1": "Refonte de Idiliz en responsive sur une base Angular, en réalisant l’interface entièrement en HTML et CSS natifs.",
+          "details2": "Développement de l’interface responsive du site Ooofly sur une base Angular en HTML et CSS natifs."
         },
 
         "bazarchic": {
           "jobTitle": "Développeur UI",
-          "details1": "Lead développeur UI pour la création d’un design system.",
+          "details1": "Lead développeur UI, j’ai mis en place et fait évoluer le design system, réalisé les revues de code et réparti les tâches dans mon équipe.",
           "details2": "Conseil stratégique sur les choix de design et accès utilisateurs.",
           "details3": "Refonte responsive de l’interface.",
           "details4": "Intégration d’e-mails responsives pour les campagnes marketing."
@@ -74,6 +75,16 @@
           "jobTitle": "Développeur UI",
           "details1": "Conception de sites commerciaux en collaboration avec l’équipe marketing.",
           "details2": "Intégration de modules e-commerce et configuration du back-office personnalisé."
+        }
+      },
+
+      "educationTitle": "Formations",
+      "education": {
+        "ipssi": {
+          "jobTitle": "Master Chef de projet en développement"
+        },
+        "julesFerry": {
+          "jobTitle": "BTS Informatique de Gestion"
         }
       }
     }

@@ -1,5 +1,10 @@
 import "./index.scss";
 
+type Sources = {
+  url: string;
+  label: string;
+};
+
 export type ExperienceProps = {
   startDate: string;
   endDate: string;
@@ -7,7 +12,8 @@ export type ExperienceProps = {
   companyName: string;
   location: string;
   skills: string[];
-  details: string[];
+  details?: string[];
+  sources?: Sources[];
 };
 
 type ExperienceCardProps = {
@@ -18,6 +24,9 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
   return (
     <div className="ExperienceCard">
       <div className="ExperienceCard__date">
+        <span className="ExperienceCard__date__icon material-symbols-sharp">
+          date_range
+        </span>
         {data.startDate} - {data.endDate}
       </div>
 
@@ -25,6 +34,9 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
         {data.companyName}
 
         <span className="ExperienceCard__company__location">
+          <span className="ExperienceCard__company__location__icon material-symbols-sharp">
+            location_on
+          </span>
           {data.location}
         </span>
       </h2>
@@ -42,11 +54,32 @@ export const ExperienceCard = ({ data }: ExperienceCardProps) => {
         ))}
       </div>
 
-      <ul className="ExperienceCard__details">
-        {data.details.map((detail, i) => (
-          <li key={`ExperienceCard__details-${i}`}>{detail}</li>
-        ))}
-      </ul>
+      {data.details && (
+        <ul className="ExperienceCard__details">
+          {data.details.map((detail, i) => (
+            <li
+              className="ExperienceCard__details__item"
+              key={`ExperienceCard__details-${i}`}
+            >
+              {detail}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {data.sources && (
+        <div className="ExperienceCard__sources">
+          <span className="ExperienceCard__sources__icon material-symbols-sharp light">
+            link
+          </span>
+
+          {data.sources.map((source, i) => (
+            <a href={source.url} key={`ExperienceCard__sources-${i}`}>
+              {source.label}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

@@ -15,7 +15,14 @@
 
   "pages": {
     "AboutPage": {
-      "intro": "In progress"
+      "title": "About my CV",
+      "txt1": "I designed this online CV to provide a concrete overview of the technologies I use and my working methodology: a mobile-first responsive site conceived from the ground up to adapt to all screen sizes. Every design choice—from colors and typography to icons—was crafted entirely by me.",
+      "txt2": "To facilitate mobile navigation, I implemented a floating menu at the bottom of the screen, easily accessible by thumb, with the option to position it on the left or right according to your preference (handy for left-handed users!).",
+      "txt3": "You can view the full code on my ",
+      "txt4": "Also find my projects and experiments on my ",
+      "txt5": "And for any contact or collaboration, my profile ",
+      "txt6": " is the best channel.",
+      "txt7": "Feel free to send me a message there—I’d be delighted to connect with you!"
     },
 
     "HomePage": {

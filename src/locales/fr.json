@@ -15,7 +15,14 @@
 
   "pages": {
     "AboutPage": {
-      "intro": "En cours"
+      "title": "À propos de mon CV",
+      "txt1": "J’ai conçu ce CV en ligne pour vous offrir un aperçu concret des technologies que j’utilise et de ma méthodologie de travail : un site responsive mobile-first, pensé dès l’origine pour s’adapter à toutes les tailles d’écran. Chaque choix de design – des couleurs aux typographies en passant par les icônes – a été réalisé de A à Z par mes soins.",
+      "txt2": "Pour faciliter la navigation sur mobile, j’ai implémenté un menu flottant positionné en bas de l’écran, facilement accessible au pouce, avec la possibilité de le placer à gauche ou à droite selon votre préférence (pratique si vous êtes gaucher !).",
+      "txt3": "Vous pouvez consulter l’intégralité du code sur mon ",
+      "txt4": "Retrouvez également mes projets et expérimentations sur mon ",
+      "txt5": "Et pour toute prise de contact ou collaboration, mon profil ",
+      "txt6": " est le meilleur canal.",
+      "txt7": " N’hésitez pas à m’y envoyer un message, je serai ravi d’échanger avec vous !"
     },
 
     "HomePage": {

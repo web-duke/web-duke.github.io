@@ -1,9 +1,11 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import ExperienceCard, {
   type ExperienceProps,
 } from "../../components/ExperienceCard";
+import { SKILL_NAME } from "../../constants/skills";
+import { getDurationSum } from "../../utils/date";
 import "./index.scss";
-import React from "react";
 
 export const HomePage = () => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.HomePage" });
@@ -12,6 +14,9 @@ export const HomePage = () => {
   });
   const { t: tEdu } = useTranslation("translation", {
     keyPrefix: "pages.HomePage.education",
+  });
+  const { t: tCommon } = useTranslation("translation", {
+    keyPrefix: "common",
   });
 
   const experiences: ExperienceProps[] = [
@@ -22,20 +27,20 @@ export const HomePage = () => {
       companyName: "Kehops",
       location: "Québec, Qc, Canada",
       skills: [
-        "React Js",
-        "Typescript",
-        "Javascript",
-        "Git",
-        "GraphQL",
-        "Nest Js",
-        "Scss",
-        "Tailwind CSS",
-        "HTML/CSS",
-        "Jest",
-        "Responsive Design",
-        "Astro",
-        "Jira",
-        "Figma",
+        SKILL_NAME.React,
+        SKILL_NAME.Typescript,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.GraphQL,
+        SKILL_NAME.NestJs,
+        SKILL_NAME.Jest,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Scss,
+        SKILL_NAME.TailwindCSS,
+        SKILL_NAME.Astro,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Figma,
       ],
       details: [tExp("kehops.details1"), tExp("kehops.details2")],
       sources: [{ url: "https://www.kehops.com/", label: "kehops.com" }],
@@ -47,15 +52,15 @@ export const HomePage = () => {
       companyName: "Appcom",
       location: "Longueuil, Qc, Canada",
       skills: [
-        "React Js",
-        "Typescript",
-        "Javascript",
-        "Git",
-        "Scss",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Figma",
+        SKILL_NAME.React,
+        SKILL_NAME.Typescript,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Scss,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Figma,
       ],
       details: [
         tExp("appcom.details1"),
@@ -71,17 +76,17 @@ export const HomePage = () => {
       companyName: "Radio Canada",
       location: "Montréal, Qc, Canada",
       skills: [
-        "React Js",
-        "Typescript",
-        "Javascript",
-        "Git",
-        "Scss",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Photoshop",
-        "Storybook",
-        "Styled Component",
+        SKILL_NAME.React,
+        SKILL_NAME.Typescript,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Storybook,
+        SKILL_NAME.StyledComponent,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Scss,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Photoshop,
       ],
       details: [tExp("radioCan.details1")],
       sources: [
@@ -95,14 +100,14 @@ export const HomePage = () => {
       companyName: "MisterFly",
       location: "Paris, France",
       skills: [
-        "Angular",
-        "Javascript",
-        "Git",
-        "Scss",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Photoshop",
+        SKILL_NAME.Angular,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Scss,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Photoshop,
       ],
       details: [tExp("misterFly.details1"), tExp("misterFly.details2")],
       sources: [
@@ -117,13 +122,13 @@ export const HomePage = () => {
       companyName: "Bazarchic",
       location: "Gennevilliers, France",
       skills: [
-        "Symfony",
-        "Javascript",
-        "Git",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Photoshop",
+        SKILL_NAME.Symfony,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Photoshop,
       ],
       details: [
         tExp("bazarchic.details1"),
@@ -140,13 +145,13 @@ export const HomePage = () => {
       companyName: "Shiva Communication",
       location: "Clichy, France",
       skills: [
-        "Symfony",
-        "Javascript",
-        "Git",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Photoshop",
+        SKILL_NAME.Symfony,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Photoshop,
       ],
       details: [tExp("shiva.details1")],
       sources: [{ url: "http://www.shivacom.fr/", label: "shivacom.fr" }],
@@ -158,12 +163,12 @@ export const HomePage = () => {
       companyName: "BNP Paribas",
       location: "Versailles, France",
       skills: [
-        "Javascript",
-        "SVN",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Photoshop",
+        SKILL_NAME.Javascript,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Svn,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Photoshop,
       ],
       details: [tExp("bnp.details1")],
       sources: [
@@ -177,12 +182,12 @@ export const HomePage = () => {
       companyName: "Weka",
       location: "Versailles, France",
       skills: [
-        "Javascript",
-        "SVN",
-        "HTML/CSS",
-        "Responsive Design",
-        "Jira",
-        "Photoshop",
+        SKILL_NAME.Javascript,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Svn,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Photoshop,
       ],
       details: [tExp("weka.details1")],
       sources: [{ url: "https://www.weka.fr/", label: "weka.fr" }],
@@ -194,16 +199,192 @@ export const HomePage = () => {
       companyName: "Kalidea Pulse",
       location: "Versailles, France",
       skills: [
-        "Php",
-        "Javascript",
-        "SVN",
-        "HTML/CSS",
-        "Responsive Design",
-        "Photoshop",
+        SKILL_NAME.Php,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Svn,
+        SKILL_NAME.Photoshop,
       ],
       details: [tExp("kalidea.details1")],
     },
   ];
+
+  const skillsYears = {
+    Angular: getDurationSum(
+      [{ start: "2015-04", end: "2018-12" }],
+      tCommon,
+      true
+    ),
+    Astro: getDurationSum(
+      [{ start: "2023-11", end: "2025-05" }],
+      tCommon,
+      true
+    ),
+    Figma: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+      ],
+      tCommon,
+      true
+    ),
+    Git: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+      ],
+      tCommon,
+      true
+    ),
+    GraphQL: getDurationSum(
+      [{ start: "2023-11", end: "2025-05" }],
+      tCommon,
+      true
+    ),
+    HtmlCss: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    Javascript: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    Jest: getDurationSum([{ start: "2023-11", end: "2025-05" }], tCommon, true),
+    Jira: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    NestJs: getDurationSum(
+      [{ start: "2023-11", end: "2025-05" }],
+      tCommon,
+      true
+    ),
+    Photoshop: getDurationSum(
+      [
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    Php: getDurationSum([{ start: "2012-08", end: "2014-08" }], tCommon, true),
+    React: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+      ],
+      tCommon,
+      true
+    ),
+    ResponsiveDesign: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    Scss: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    Storybook: getDurationSum(
+      [{ start: "2019-02", end: "2020-05" }],
+      tCommon,
+      true
+    ),
+    StyledComponent: getDurationSum(
+      [{ start: "2019-02", end: "2020-05" }],
+      tCommon,
+      true
+    ),
+    Svn: getDurationSum(
+      [
+        { start: "2014-11", end: "2015-01" },
+        { start: "2014-09", end: "2014-10" },
+        { start: "2012-08", end: "2014-08" },
+      ],
+      tCommon,
+      true
+    ),
+    Symfony: getDurationSum(
+      [
+        { start: "2015-04", end: "2018-12" },
+        { start: "2015-01", end: "2015-03" },
+      ],
+      tCommon,
+      true
+    ),
+    TailwindCSS: getDurationSum(
+      [{ start: "2023-11", end: "2025-05" }],
+      tCommon,
+      true
+    ),
+    Typescript: getDurationSum(
+      [
+        { start: "2023-11", end: "2025-05" },
+        { start: "2020-10", end: "2023-10" },
+        { start: "2019-02", end: "2020-05" },
+      ],
+      tCommon,
+      true
+    ),
+  };
 
   const education: ExperienceProps[] = [
     {

@@ -12,6 +12,7 @@
     "build-storybook": "storybook build -o docs/storybook"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "i18next": "^25.2.0",
     "i18next-browser-languagedetector": "^8.1.0",
     "react": "^19.1.0",

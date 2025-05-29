@@ -95,5 +95,12 @@
         }
       }
     }
+  },
+
+  "common": {
+    "month_one": "{{count}} mois",
+    "month_other": "{{count}} mois",
+    "year_one": "{{count}} an",
+    "year_other": "{{count}} ans"
   }
 }

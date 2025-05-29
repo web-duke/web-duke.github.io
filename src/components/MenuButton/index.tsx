@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ROUTES } from "../../routes";
+import { ROUTES } from "../../constants/routes";
 import LangButton from "../LangButton";
 import "./index.scss";
 

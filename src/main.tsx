@@ -7,7 +7,7 @@ import { ScrolledProvider } from "./context/ScrolledContext.tsx";
 import "./i18n";
 import AboutPage from "./pages/AboutPage/index.tsx";
 import HomePage from "./pages/HomePage/index.tsx";
-import { ROUTES } from "./routes.ts";
+import { ROUTES } from "./constants/routes.ts";
 import "./styles/normalize.css";
 import "./styles/main.scss";
 

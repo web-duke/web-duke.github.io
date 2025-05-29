@@ -6,6 +6,7 @@ import ExperienceCard, {
 import { SKILL_NAME } from "../../constants/skills";
 import { getDurationSum } from "../../utils/date";
 import "./index.scss";
+import PieChart from "../../components/PieChart";
 
 export const HomePage = () => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.HomePage" });
@@ -210,182 +211,6 @@ export const HomePage = () => {
     },
   ];
 
-  const skillsYears = {
-    Angular: getDurationSum(
-      [{ start: "2015-04", end: "2018-12" }],
-      tCommon,
-      true
-    ),
-    Astro: getDurationSum(
-      [{ start: "2023-11", end: "2025-05" }],
-      tCommon,
-      true
-    ),
-    Figma: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-      ],
-      tCommon,
-      true
-    ),
-    Git: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-      ],
-      tCommon,
-      true
-    ),
-    GraphQL: getDurationSum(
-      [{ start: "2023-11", end: "2025-05" }],
-      tCommon,
-      true
-    ),
-    HtmlCss: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    Javascript: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    Jest: getDurationSum([{ start: "2023-11", end: "2025-05" }], tCommon, true),
-    Jira: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    NestJs: getDurationSum(
-      [{ start: "2023-11", end: "2025-05" }],
-      tCommon,
-      true
-    ),
-    Photoshop: getDurationSum(
-      [
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    Php: getDurationSum([{ start: "2012-08", end: "2014-08" }], tCommon, true),
-    React: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-      ],
-      tCommon,
-      true
-    ),
-    ResponsiveDesign: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    Scss: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    Storybook: getDurationSum(
-      [{ start: "2019-02", end: "2020-05" }],
-      tCommon,
-      true
-    ),
-    StyledComponent: getDurationSum(
-      [{ start: "2019-02", end: "2020-05" }],
-      tCommon,
-      true
-    ),
-    Svn: getDurationSum(
-      [
-        { start: "2014-11", end: "2015-01" },
-        { start: "2014-09", end: "2014-10" },
-        { start: "2012-08", end: "2014-08" },
-      ],
-      tCommon,
-      true
-    ),
-    Symfony: getDurationSum(
-      [
-        { start: "2015-04", end: "2018-12" },
-        { start: "2015-01", end: "2015-03" },
-      ],
-      tCommon,
-      true
-    ),
-    TailwindCSS: getDurationSum(
-      [{ start: "2023-11", end: "2025-05" }],
-      tCommon,
-      true
-    ),
-    Typescript: getDurationSum(
-      [
-        { start: "2023-11", end: "2025-05" },
-        { start: "2020-10", end: "2023-10" },
-        { start: "2019-02", end: "2020-05" },
-      ],
-      tCommon,
-      true
-    ),
-  };
-
   const education: ExperienceProps[] = [
     {
       startDate: "2012-09",
@@ -406,10 +231,95 @@ export const HomePage = () => {
     },
   ];
 
+  const skillsYears = [
+    {
+      name: SKILL_NAME.ResponsiveDesign,
+      value: getDurationSum(
+        [
+          { start: "2023-11", end: "2025-05" },
+          { start: "2020-10", end: "2023-10" },
+          { start: "2019-02", end: "2020-05" },
+          { start: "2015-04", end: "2018-12" },
+          { start: "2015-01", end: "2015-03" },
+          { start: "2014-11", end: "2015-01" },
+          { start: "2014-09", end: "2014-10" },
+          { start: "2012-08", end: "2014-08" },
+        ],
+        tCommon,
+        true
+      ),
+    },
+    {
+      name: `${SKILL_NAME.HtmlCss}/${SKILL_NAME.Javascript}`,
+      value: getDurationSum(
+        [
+          { start: "2023-11", end: "2025-05" },
+          { start: "2020-10", end: "2023-10" },
+          { start: "2019-02", end: "2020-05" },
+          { start: "2015-04", end: "2018-12" },
+          { start: "2015-01", end: "2015-03" },
+          { start: "2014-11", end: "2015-01" },
+          { start: "2014-09", end: "2014-10" },
+          { start: "2012-08", end: "2014-08" },
+        ],
+        tCommon,
+        true
+      ),
+    },
+    {
+      name: `${SKILL_NAME.React}/${SKILL_NAME.Typescript}`,
+      value: getDurationSum(
+        [
+          { start: "2023-11", end: "2025-05" },
+          { start: "2020-10", end: "2023-10" },
+          { start: "2019-02", end: "2020-05" },
+        ],
+        tCommon,
+        true
+      ),
+    },
+    {
+      name: `${SKILL_NAME.Storybook}/${SKILL_NAME.StyledComponent}`,
+      value: getDurationSum(
+        [{ start: "2019-02", end: "2020-05" }],
+        tCommon,
+        true
+      ),
+    },
+    {
+      name: `${SKILL_NAME.GraphQL}/${SKILL_NAME.Jest}/${SKILL_NAME.NestJs}`,
+      value: getDurationSum(
+        [{ start: "2023-11", end: "2025-05" }],
+        tCommon,
+        true
+      ),
+    },
+    {
+      name: SKILL_NAME.Git,
+      value: getDurationSum(
+        [
+          { start: "2023-11", end: "2025-05" },
+          { start: "2020-10", end: "2023-10" },
+          { start: "2019-02", end: "2020-05" },
+          { start: "2015-04", end: "2018-12" },
+          { start: "2015-01", end: "2015-03" },
+        ],
+        tCommon,
+        true
+      ),
+    },
+  ];
+
+  console.log(skillsYears);
+
   return (
     <div className="HomePage">
       <section className="HomePage__intro">
         <p>{t("intro")}</p>
+      </section>
+
+      <section className="HomePage__experiencesSummary">
+        <PieChart data={skillsYears} />
       </section>
 
       <section className="HomePage__experiences">

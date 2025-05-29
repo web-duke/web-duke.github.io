@@ -1,23 +1,8 @@
+import type { Experience } from "../../hooks/useExperiences";
 import "./index.scss";
 
-type Sources = {
-  url: string;
-  label: string;
-};
-
-export type ExperienceProps = {
-  startDate: string;
-  endDate: string;
-  jobTitle: string;
-  companyName: string;
-  location: string;
-  skills: string[];
-  details?: string[];
-  sources?: Sources[];
-};
-
 type ExperienceCardProps = {
-  data: ExperienceProps;
+  data: Experience;
 };
 
 export const ExperienceCard = ({ data }: ExperienceCardProps) => {

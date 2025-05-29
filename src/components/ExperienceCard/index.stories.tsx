@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import ExperienceCard, { type ExperienceProps } from ".";
+import ExperienceCard from ".";
+import type { Experience } from "../../hooks/useExperiences";
 
 const meta = {
   title: "Components/ExperienceCard",
@@ -18,7 +19,7 @@ const meta = {
       location: "Québec, Qc, Canada",
       skills: ["React Js", "Typescript"],
       details: ["Conception et développement d’applications web"],
-    } as ExperienceProps,
+    } as Experience,
   },
 } satisfies Meta<typeof ExperienceCard>;
 

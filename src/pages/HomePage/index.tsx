@@ -247,7 +247,7 @@ export const HomePage = () => {
         ],
         tCommon,
         true
-      ),
+      ) as number,
     },
     {
       name: `${SKILL_NAME.HtmlCss}/${SKILL_NAME.Javascript}`,
@@ -264,7 +264,7 @@ export const HomePage = () => {
         ],
         tCommon,
         true
-      ),
+      ) as number,
     },
     {
       name: `${SKILL_NAME.React}/${SKILL_NAME.Typescript}`,
@@ -276,7 +276,7 @@ export const HomePage = () => {
         ],
         tCommon,
         true
-      ),
+      ) as number,
     },
     {
       name: `${SKILL_NAME.Storybook}/${SKILL_NAME.StyledComponent}`,
@@ -284,7 +284,7 @@ export const HomePage = () => {
         [{ start: "2019-02", end: "2020-05" }],
         tCommon,
         true
-      ),
+      ) as number,
     },
     {
       name: `${SKILL_NAME.GraphQL}/${SKILL_NAME.Jest}/${SKILL_NAME.NestJs}`,
@@ -292,7 +292,7 @@ export const HomePage = () => {
         [{ start: "2023-11", end: "2025-05" }],
         tCommon,
         true
-      ),
+      ) as number,
     },
     {
       name: SKILL_NAME.Git,
@@ -306,11 +306,9 @@ export const HomePage = () => {
         ],
         tCommon,
         true
-      ),
+      ) as number,
     },
   ];
-
-  console.log(skillsYears);
 
   return (
     <div className="HomePage">

@@ -46,7 +46,7 @@ export const PieChart = ({ data }: PieChartProps) => {
           dataKey="value"
           strokeWidth={0}
         >
-          {data.map((entry, idx) => (
+          {data.map((_entry, idx) => (
             <Cell key={`cell-${idx}`} fill={COLORS[idx % COLORS.length]} />
           ))}
         </Pie>

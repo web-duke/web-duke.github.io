@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage/index.tsx";
 import { ROUTES } from "./constants/routes.ts";
 import "./styles/normalize.css";
 import "./styles/main.scss";
+import "./styles/print.scss";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

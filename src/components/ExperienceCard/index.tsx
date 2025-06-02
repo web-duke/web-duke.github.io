@@ -3,11 +3,11 @@ import "./index.scss";
 
 type ExperienceCardProps = {
   data: Experience;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
-export const ExperienceCard = ({ data }: ExperienceCardProps) => {
+export const ExperienceCard = ({ className, data }: ExperienceCardProps) => {
   return (
-    <div className="ExperienceCard">
+    <div className={`ExperienceCard ${className ?? ""}`}>
       <div className="ExperienceCard__date">
         <span className="ExperienceCard__date__icon material-symbols-sharp">
           date_range

@@ -1,0 +1,56 @@
+@page {
+  size: A4 portrait;
+  margin: 1.5cm 0.5cm;
+}
+
+@media print {
+  :root {
+    color: $c-front-black;
+  }
+
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  body {
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .no-print,
+  nav,
+  .Avatar,
+  .MenuButton,
+  .LangButton,
+  .HomePage__experiencesSummary {
+    display: none !important;
+  }
+
+  .HomePage__experiences__title {
+    margin-bottom: 1cm !important;
+  }
+
+  .HomePage__experiences__title__wrapper__icon {
+    color: $c-highlight-1;
+  }
+
+  .ExperienceCard__skills__item {
+    border: 1px solid $c-highlight-1;
+  }
+
+  .ExperienceCard {
+    // page-break-inside: avoid;
+    // break-inside: avoid;
+    margin-bottom: 1cm !important;
+  }
+}

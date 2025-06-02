@@ -1,10 +1,10 @@
 import "./index.scss";
 
-type BoxProps = React.ButtonHTMLAttributes<HTMLDivElement>;
+type BoxProps = React.HTMLAttributes<HTMLDivElement>;
 
-export const Box = ({ children, ...props }: BoxProps) => {
+export const Box = ({ className, children, ...props }: BoxProps) => {
   return (
-    <div className="Box" {...props}>
+    <div className={`Box ${className ?? ""}`} {...props}>
       {children}
     </div>
   );

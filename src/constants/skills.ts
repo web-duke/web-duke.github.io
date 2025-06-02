@@ -9,7 +9,7 @@ export type SkillCategory =
 
 export const SKILL_NAME = {
   Angular: "Angular",
-  Astro: "Astro",
+  Astro: "Astro/Contentful",
   Figma: "Figma",
   Git: "Git",
   GraphQL: "GraphQL",

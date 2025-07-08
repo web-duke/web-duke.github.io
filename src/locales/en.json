@@ -3,6 +3,8 @@
     "alt": "Avatar"
   },
 
+  "ExperienceCard": { "remote": "Remote" },
+
   "HeaderContent": {
     "title": "Giovanni",
     "subtitle": "Web Developer"

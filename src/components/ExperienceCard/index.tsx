@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import type { Experience } from "../../hooks/useExperiences";
 import "./index.scss";
 
@@ -6,6 +7,8 @@ type ExperienceCardProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export const ExperienceCard = ({ className, data }: ExperienceCardProps) => {
+  const { t } = useTranslation("translation", { keyPrefix: "ExperienceCard" });
+
   return (
     <div className={`ExperienceCard ${className ?? ""}`}>
       <div className="ExperienceCard__date">
@@ -24,6 +27,12 @@ export const ExperienceCard = ({ className, data }: ExperienceCardProps) => {
           </span>
           {data.location}
         </span>
+
+        {data.remote && (
+          <span className="ExperienceCard__company__remoteTag">
+            {data.remote}% {t("remote")}
+          </span>
+        )}
       </h2>
 
       <div className="ExperienceCard__jobTitle">{data.jobTitle}</div>

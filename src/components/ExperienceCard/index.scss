@@ -19,6 +19,18 @@
     line-height: 0.6;
   }
 
+  .ExperienceCard__company__remoteTag {
+    display: block;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+    @media (min-width: $bp-s2) {
+      display: inline-block;
+      margin-top: 0;
+    }
+  }
+
   .ExperienceCard__company__location {
     display: block;
     margin-top: 1rem;

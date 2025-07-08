@@ -15,6 +15,7 @@ export interface Experience {
   companyName: string;
   location: string;
   skills: string[];
+  remote?: number;
   details?: string[];
   sources?: Sources[];
 }
@@ -54,6 +55,7 @@ export function useExperiences() {
         SKILL_NAME.Jira,
         SKILL_NAME.Figma,
       ],
+      remote: 100,
       details: [tExp("kehops.details1"), tExp("kehops.details2")],
       sources: [{ url: "https://www.kehops.com/", label: "kehops.com" }],
     },
@@ -75,6 +77,7 @@ export function useExperiences() {
         SKILL_NAME.Jira,
         SKILL_NAME.Figma,
       ],
+      remote: 100,
       details: [
         tExp("appcom.details1"),
         tExp("appcom.details2"),

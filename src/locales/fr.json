@@ -3,6 +3,8 @@
     "alt": "Avatar"
   },
 
+  "ExperienceCard": { "remote": "Télétravail" },
+
   "HeaderContent": {
     "title": "Giovanni",
     "subtitle": "Développeur Web"

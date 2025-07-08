@@ -4,6 +4,7 @@ import ExperienceCard from "../../components/ExperienceCard";
 import PieChart from "../../components/PieChart";
 import { useExperiences } from "../../hooks/useExperiences";
 import "./index.scss";
+import { CONTACT_DATA } from "../../constants/contactData";
 
 export const HomePage = () => {
   const { experiences, skillsYears, education } = useExperiences();
@@ -13,6 +14,24 @@ export const HomePage = () => {
     <div className="HomePage">
       <section className="HomePage__intro">
         <p>{t("intro")}</p>
+
+        <p className="HomePage__intro__noContact">
+          {t("noContact")}
+          <a
+            href={CONTACT_DATA.Linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </p>
+
+        <p className="HomePage__intro__contact">
+          <span className="HomePage__intro__contact__email">
+            {CONTACT_DATA.Email}
+          </span>{" "}
+          - {CONTACT_DATA.City}
+        </p>
       </section>
 
       <section className="HomePage__experiencesSummary">

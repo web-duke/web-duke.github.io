@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./index.scss";
+import { CONTACT_DATA } from "../../constants/contactData";
 
 export const AboutPage = () => {
   const { t } = useTranslation("translation", { keyPrefix: "pages.AboutPage" });
@@ -14,11 +15,7 @@ export const AboutPage = () => {
 
       <p>
         {t("txt3")}
-        <a
-          href="https://github.com/web-duke/web-duke.github.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={CONTACT_DATA.Github} target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
         .
@@ -27,7 +24,7 @@ export const AboutPage = () => {
       <p>
         {t("txt4")}
         <a
-          href="https://codepen.io/webduke/pens/popular"
+          href={CONTACT_DATA.Codepen}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -39,7 +36,7 @@ export const AboutPage = () => {
       <p>
         {t("txt5")}
         <a
-          href="https://www.linkedin.com/in/giovanni-mrqs/"
+          href={CONTACT_DATA.Linkedin}
           target="_blank"
           rel="noopener noreferrer"
         >

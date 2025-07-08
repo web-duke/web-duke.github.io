@@ -28,6 +28,21 @@
     }
   }
 
+  .HomePage__intro__noContact {
+    font-size: 1rem;
+  }
+
+  .HomePage__intro__contact {
+    display: none;
+    font-size: 1rem;
+  }
+
+  .HomePage__intro__contact__email {
+    color: $c-highlight-1;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
   .HomePage__experiences__title {
     margin-bottom: 5rem;
   }

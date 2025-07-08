@@ -32,8 +32,13 @@
   .Avatar,
   .MenuButton,
   .LangButton,
+  .HomePage__intro__noContact,
   .HomePage__experiencesSummary {
     display: none !important;
+  }
+
+  .HomePage__intro__contact {
+    display: block !important;
   }
 
   .HomePage__experiences__title {

@@ -33,6 +33,27 @@ export function useExperiences() {
 
   const experiences: Experience[] = [
     {
+      id: "freelance-2025",
+      startDate: "2025-05",
+      endDate: tExp("common.today"),
+      jobTitle: tExp("freelance-2025.jobTitle"),
+      companyName: "Upwork",
+      location: "Qc, Canada",
+      skills: [
+        SKILL_NAME.React,
+        SKILL_NAME.Typescript,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Scss,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Figma,
+      ],
+      remote: 100,
+      details: [tExp("freelance-2025.details")],
+    },
+    {
       id: "kehops",
       startDate: "2023-11",
       endDate: "2025-05",

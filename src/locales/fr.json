@@ -33,6 +33,15 @@
       "experienceTitle": "Expériences professionnelles",
 
       "experiences": {
+        "common": {
+          "today": "Aujourd’hui"
+        },
+
+        "freelance-2025": {
+          "jobTitle": "Freelance",
+          "details": "Réalisation de diverses tâches front-end pour des clients variés"
+        },
+
         "kehops": {
           "jobTitle": "Développeur Full Stack",
           "details1": "Réalisation complète du site statique Kehops, installation et configuration du framework Astro, mise en place d’un système de traduction multi-langues, conception et intégration de tous les styles et animations en HTML/CSS/JavaScript sans bibliothèque tierce, et automatisation du déploiement en production via une GitHub Action.",

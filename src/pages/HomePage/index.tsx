@@ -52,7 +52,9 @@ export const HomePage = () => {
         {experiences.map((experience, i) => (
           <React.Fragment key={`ExperienceCard-${i}`}>
             <ExperienceCard
-              className={i === 3 ? "page-break" : ""}
+              className={
+                i === 1 || i === 3 || i === 6 || i === 9 ? "page-break" : ""
+              }
               data={experience}
             />
           </React.Fragment>

@@ -10,6 +10,7 @@ export type SkillCategory =
 export const SKILL_NAME = {
   Angular: "Angular",
   Astro: "Astro/Contentful",
+  Backstop: "Backstop",
   Figma: "Figma",
   Git: "Git",
   GraphQL: "GraphQL",
@@ -24,6 +25,7 @@ export const SKILL_NAME = {
   ResponsiveDesign: "Responsive Design",
   Scss: "Scss",
   Storybook: "Storybook",
+  Stencil: "Stencil Js",
   StyledComponent: "Styled Component",
   Svn: "SVN",
   Symfony: "Symfony",
@@ -36,6 +38,7 @@ export type SkillName = (typeof SKILL_NAME)[keyof typeof SKILL_NAME];
 export const SKILLS: Record<SkillName, SkillCategory> = {
   Angular: SKILL_CATEGORY.Development,
   Astro: SKILL_CATEGORY.Development,
+  Backstop: SKILL_CATEGORY.Development,
   Figma: SKILL_CATEGORY.Design,
   Git: SKILL_CATEGORY.Development,
   GraphQL: SKILL_CATEGORY.Development,
@@ -51,6 +54,7 @@ export const SKILLS: Record<SkillName, SkillCategory> = {
   SVN: SKILL_CATEGORY.Development,
   Scss: SKILL_CATEGORY.Development,
   Storybook: SKILL_CATEGORY.Development,
+  Stencil: SKILL_CATEGORY.Development,
   StyledComponent: SKILL_CATEGORY.Development,
   Svn: SKILL_CATEGORY.Development,
   Symfony: SKILL_CATEGORY.Development,

@@ -33,9 +33,41 @@ export function useExperiences() {
 
   const experiences: Experience[] = [
     {
+      id: "desjardins",
+      startDate: "2026-01",
+      endDate: "2026-06",
+      jobTitle: tExp("desjardins.jobTitle"),
+      companyName: "Desjardins",
+      location: "Montréal, Qc, Canada",
+      skills: [
+        SKILL_NAME.Stencil,
+        SKILL_NAME.React,
+        SKILL_NAME.Typescript,
+        SKILL_NAME.Javascript,
+        SKILL_NAME.Jest,
+        SKILL_NAME.Git,
+        SKILL_NAME.ResponsiveDesign,
+        SKILL_NAME.HtmlCss,
+        SKILL_NAME.Scss,
+        SKILL_NAME.Backstop,
+        SKILL_NAME.Jira,
+        SKILL_NAME.Figma,
+      ],
+      remote: 40,
+      details: [
+        tExp("desjardins.details1"),
+        tExp("desjardins.details2"),
+        tExp("desjardins.details3"),
+        tExp("desjardins.details4"),
+      ],
+      sources: [
+        { url: "https://www.desjardins.com/", label: "desjardins.com" },
+      ],
+    },
+    {
       id: "freelance-2025",
       startDate: "2025-05",
-      endDate: tExp("common.today"),
+      endDate: "2025-11",
       jobTitle: tExp("freelance-2025.jobTitle"),
       companyName: "Upwork",
       location: "Qc, Canada",
@@ -259,11 +291,11 @@ export function useExperiences() {
     duration: getDurationSum(
       [{ start: exp.startDate, end: exp.endDate }],
       tCommon,
-      true
+      true,
     ) as number,
     durationText: getDurationSum(
       [{ start: exp.startDate, end: exp.endDate }],
-      tCommon
+      tCommon,
     ),
   }));
 
@@ -271,6 +303,8 @@ export function useExperiences() {
     {
       name: SKILL_NAME.ResponsiveDesign,
       value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
         (experiencesWithDuration.find((e) => e.id === "kehops")?.duration ??
           0) +
         (experiencesWithDuration.find((e) => e.id === "appcom")?.duration ??
@@ -288,6 +322,8 @@ export function useExperiences() {
     {
       name: `${SKILL_NAME.HtmlCss}/${SKILL_NAME.Javascript}`,
       value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
         (experiencesWithDuration.find((e) => e.id === "kehops")?.duration ??
           0) +
         (experiencesWithDuration.find((e) => e.id === "appcom")?.duration ??
@@ -303,8 +339,10 @@ export function useExperiences() {
           0),
     },
     {
-      name: `${SKILL_NAME.React}/${SKILL_NAME.Typescript}`,
+      name: `${SKILL_NAME.React}`,
       value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
         (experiencesWithDuration.find((e) => e.id === "kehops")?.duration ??
           0) +
         (experiencesWithDuration.find((e) => e.id === "appcom")?.duration ??
@@ -313,18 +351,53 @@ export function useExperiences() {
           0),
     },
     {
-      name: `${SKILL_NAME.Storybook}/${SKILL_NAME.StyledComponent}`,
+      name: `${SKILL_NAME.Stencil}`,
+      value:
+        experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+        0,
+    },
+    {
+      name: `${SKILL_NAME.Typescript}`,
+      value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
+        (experiencesWithDuration.find((e) => e.id === "kehops")?.duration ??
+          0) +
+        (experiencesWithDuration.find((e) => e.id === "appcom")?.duration ??
+          0) +
+        (experiencesWithDuration.find((e) => e.id === "radioCan")?.duration ??
+          0),
+    },
+    {
+      name: `${SKILL_NAME.Storybook}`,
+      value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
+        (experiencesWithDuration.find((e) => e.id === "radioCan")?.duration ??
+          0),
+    },
+    {
+      name: `${SKILL_NAME.StyledComponent}`,
       value:
         experiencesWithDuration.find((e) => e.id === "radioCan")?.duration ?? 0,
     },
     {
-      name: `${SKILL_NAME.GraphQL}/${SKILL_NAME.Jest}/${SKILL_NAME.NestJs}`,
+      name: `${SKILL_NAME.Jest}`,
+      value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
+        (experiencesWithDuration.find((e) => e.id === "kehops")?.duration ?? 0),
+    },
+    {
+      name: `${SKILL_NAME.GraphQL}/${SKILL_NAME.NestJs}`,
       value:
         experiencesWithDuration.find((e) => e.id === "kehops")?.duration ?? 0,
     },
     {
       name: SKILL_NAME.Git,
       value:
+        (experiencesWithDuration.find((e) => e.id === "desjardins")?.duration ??
+          0) +
         (experiencesWithDuration.find((e) => e.id === "kehops")?.duration ??
           0) +
         (experiencesWithDuration.find((e) => e.id === "appcom")?.duration ??

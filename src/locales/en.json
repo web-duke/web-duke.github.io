@@ -37,6 +37,14 @@
           "today": "Today"
         },
 
+        "desjardins": {
+          "jobTitle": "Front-end Developer",
+          "details1": "Design, development and maintenance of Desjardins' reusable web component library for the design system, used organization-wide to ensure consistency and accessibility of digital interfaces.",
+          "details2": "Creation and maintenance of web components with StencilJS, compiled into native Angular and React wrappers.",
+          "details3": "Set up unit testing with Jest and visual regression testing with Backstop.",
+          "details4": "Documented components using Storybook."
+        },
+
         "freelance-2025": {
           "jobTitle": "Freelance",
           "details": "Completion of various front-end tasks for diverse clients"

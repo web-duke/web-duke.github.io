@@ -53,7 +53,7 @@ export const HomePage = () => {
           <React.Fragment key={`ExperienceCard-${i}`}>
             <ExperienceCard
               className={
-                i === 1 || i === 3 || i === 6 || i === 9 ? "page-break" : ""
+                i === 1 || i === 3 || i === 5 || i === 8 ? "page-break" : ""
               }
               data={experience}
             />
